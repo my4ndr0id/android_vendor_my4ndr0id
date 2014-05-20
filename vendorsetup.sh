@@ -13,4 +13,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-add_lunch_combo my4ndr0id_eg909
+add_lunch_combo my4ndr0id_eg909-eng
