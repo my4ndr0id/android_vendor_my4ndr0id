@@ -1,3 +1,19 @@
+#
+# Copyright (C) 2014 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
 PRODUCT_BRAND ?= my4ndr0id
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -64,7 +80,10 @@ PRODUCT_COPY_FILES += \
 	$(RINGTONE_PATH)/House_of_house.ogg:system/media/audio/ringtones/House_of_house.ogg \
 	$(RINGTONE_PATH)/Silmarillia.ogg:system/media/audio/ringtones/Silmarillia.ogg
 
-PRODUCT_VERSION_MAJOR = 9
+# set to EXPERIMENTAL for now
+
+my4ndr0id_BUILDTYPE := EXPERIMENTAL
+PRODUCT_VERSION_MAJOR = caf-ics
 PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE = 0
 
@@ -76,7 +95,7 @@ ifdef my4ndr0id_EXPERIMENTAL
     my4ndr0id_BUILDTYPE := EXPERIMENTAL
 endif
 ifdef my4ndr0id_RELEASE
-    CM_BUILDTYPE := RELEASE
+    my4ndr0id_BUILDTYPE := RELEASE
 endif
 
 ifdef my4ndr0id_BUILDTYPE
