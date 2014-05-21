@@ -53,6 +53,12 @@ PRODUCT_PACKAGES += \
     .su \
     su
 
+# es file explorer
+PRODUCT_PACKAGES += \
+    es-file-explorer \
+    libmyaes \
+    libsapi_so_1
+
 #
 # CyanogenMod Audio Files
 #
