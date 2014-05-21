@@ -34,4 +34,15 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_PREBUILT)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
+## Koush Superuser
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Superuser
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_PATH := $(TARGET_OUT_APPS)
+include $(BUILD_PREBUILT)
+

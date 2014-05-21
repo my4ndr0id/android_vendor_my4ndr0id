@@ -47,6 +47,12 @@ PRODUCT_COPY_FILES +=  \
     vendor/my4ndr0id/prebuilt/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/my4ndr0id/prebuilt/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
+# koush superuser
+PRODUCT_PACKAGES += \
+    Superuser \
+    .su \
+    su
+
 #
 # CyanogenMod Audio Files
 #
@@ -81,7 +87,6 @@ PRODUCT_COPY_FILES += \
 	$(RINGTONE_PATH)/Silmarillia.ogg:system/media/audio/ringtones/Silmarillia.ogg
 
 # set to EXPERIMENTAL for now
-
 my4ndr0id_BUILDTYPE := EXPERIMENTAL
 PRODUCT_VERSION_MAJOR = ics
 PRODUCT_VERSION_MINOR = 1
