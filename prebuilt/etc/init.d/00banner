@@ -2,7 +2,7 @@
 #
 # Print startup info
 #
-L="log -p i -t cm"
+L="log -p i -t my4ndr0id"
 
 $L "Welcome to Android `getprop ro.build.version.release` / my4ndr0id-`getprop ro.my4ndr0id.version`";
 $L "                                                _ ";
