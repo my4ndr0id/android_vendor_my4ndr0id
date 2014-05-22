@@ -42,6 +42,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/my4ndr0id/prebuilt/etc/mkshrc:system/etc/mkshrc
 
+# T-Mobile theme engine
+include vendor/my4ndr0id/config/themes_common.mk
+
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/my4ndr0id/prebuilt/media/LMprec_508.emd:system/media/LMprec_508.emd \
