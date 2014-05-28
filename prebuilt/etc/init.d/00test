@@ -1,0 +1,14 @@
+#!/system/bin/sh
+#Init.d Test
+
+busybox mount -o remount,rw -t auto /system;
+busybox mount -o remount,rw -t auto /data;
+
+if [ -e /data/Test.log ]; then
+rm /data/Test.log
+fi
+
+LOG_FILE=/data/Test.log
+exec 2> /data/Test.log
+echo  "Init.d Is Working !!! - $( date +"%m-%d-%Y %r" )" >> $LOG_FILE;
+
