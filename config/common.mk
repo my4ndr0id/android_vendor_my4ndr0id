@@ -144,8 +144,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=my4ndr0id-eg909 \
     otaupdater.otaver=$(my4ndr0id_VERSION) \
     otaupdater.otatime=$(otatime) \
-    otaupdater.sdcard.recovery=internal_sd \
-    otaupdater.sdcard.os=mnt/internal_sd
+    otaupdater.sdcard.recovery=sdcard \
+    otaupdater.sdcard.os=mnt/sdcard
 
 PRODUCT_PACKAGES += \
     ota-update-centre
