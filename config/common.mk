@@ -138,7 +138,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.my4ndr0id.version=$(my4ndr0id_VERSION) \
   ro.modversion=$(my4ndr0id_VERSION)
 
-otatime := $(shell date +%Y%m%d-%l%M)
+otatime := $(shell date +%Y%m%d-%H%M)
 
 # OTA Update Center settings
 PRODUCT_PROPERTY_OVERRIDES += \
