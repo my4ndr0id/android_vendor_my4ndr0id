@@ -56,7 +56,8 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PACKAGES += \
     Superuser \
     .su \
-    su
+    su \
+    51-superuser.sh
 
 # es file explorer
 PRODUCT_PACKAGES += \
