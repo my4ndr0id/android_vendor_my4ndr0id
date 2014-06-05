@@ -16,6 +16,11 @@
 
 PRODUCT_BRAND ?= my4ndr0id
 
+ifneq ($(TARGET_BOOTANIMATION_NAME),)
+    PRODUCT_COPY_FILES += \
+        vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+endif
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
