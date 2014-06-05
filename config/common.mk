@@ -74,6 +74,13 @@ PRODUCT_PACKAGES += \
     libmyaes \
     libsapi_so_1
 
+# Extra tools in CM
+PRODUCT_PACKAGES += \
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs
+
 # set to EXPERIMENTAL for now
 my4ndr0id_BUILDTYPE := EXPERIMENTAL
 PRODUCT_VERSION_MAJOR = ics
