@@ -167,7 +167,7 @@ otatime := $(shell date +%Y%m%d-%H%M)
 # OTA Update Center settings
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=my4ndr0id-eg909 \
-    otaupdater.otaver=$(my4ndr0id_VERSION) \
+    otaupdater.otaver=caf-cm9 \
     otaupdater.otatime=$(otatime) \
     otaupdater.sdcard.recovery=sdcard \
     otaupdater.sdcard.os=mnt/sdcard
