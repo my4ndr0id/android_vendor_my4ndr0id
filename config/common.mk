@@ -74,6 +74,39 @@ PRODUCT_PACKAGES += \
     libmyaes \
     libsapi_so_1
 
+# Required CM packages
+PRODUCT_PACKAGES += \
+    Camera \
+    Development \
+    LatinIME \
+    SpareParts \
+    su
+
+# Optional CM packages
+PRODUCT_PACKAGES += \
+    VideoEditor \
+    VoiceDialer \
+    SoundRecorder \
+    Basic \
+    HoloSpiralWallpaper \
+    MagicSmokeWallpapers \
+    NoiseField \
+    Galaxy4 \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    PhaseBeam
+
+# Custom CM packages
+PRODUCT_PACKAGES += \
+    Trebuchet \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf \
+    CMWallpapers \
+    Apollo \
+    CMUpdater
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
