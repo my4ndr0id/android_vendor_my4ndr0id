@@ -52,6 +52,15 @@ PRODUCT_COPY_FILES +=  \
     vendor/my4ndr0id/prebuilt/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/my4ndr0id/prebuilt/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
+# CM-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/my4ndr0id/prebuilt/etc/init.local.rc:root/init.cm.rc
+
+# Compcache/Zram support
+PRODUCT_COPY_FILES += \
+    vendor/my4ndr0id/prebuilt/bin/compcache:system/bin/compcache \
+    vendor/my4ndr0id/prebuilt/bin/handle_compcache:system/bin/handle_compcache
+
 # koush superuser
 PRODUCT_PACKAGES += \
     Superuser \
