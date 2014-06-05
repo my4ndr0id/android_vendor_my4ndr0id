@@ -114,6 +114,9 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/my4ndr0id/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/my4ndr0id/overlay/common
+
 # set to EXPERIMENTAL for now
 my4ndr0id_BUILDTYPE := EXPERIMENTAL
 PRODUCT_VERSION_MAJOR = ics
