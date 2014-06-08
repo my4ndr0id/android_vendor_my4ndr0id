@@ -18,7 +18,7 @@ PRODUCT_BRAND ?= my4ndr0id
 
 ifneq ($(TARGET_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+        vendor/my4ndr0id/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -31,6 +31,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
+
+# Copy over the changelog to the device
+PRODUCT_COPY_FILES += \
+    vendor/my4ndr0id/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
 # Backup Tool
 PRODUCT_PACKAGES += \
