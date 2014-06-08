@@ -110,7 +110,8 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     CMWallpapers \
     Apollo \
-    CMUpdater
+    CMUpdater \
+    GanOptimizer
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
@@ -124,7 +125,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/my4ndr0id/overlay/common
 
 # set to EXPERIMENTAL for now
 my4ndr0id_BUILDTYPE := EXPERIMENTAL
-PRODUCT_VERSION_MAJOR = ics
+PRODUCT_VERSION_MAJOR = caf-cm9
 PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE = 0
 
@@ -165,12 +166,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 otatime := $(shell date +%Y%m%d-%H%M)
 
 # OTA Update Center settings
-PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=my4ndr0id-eg909 \
-    otaupdater.otaver=caf-cm9 \
-    otaupdater.otatime=$(otatime) \
-    otaupdater.sdcard.recovery=sdcard \
-    otaupdater.sdcard.os=mnt/sdcard
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    otaupdater.otaid=my4ndr0id-eg909 \
+#    otaupdater.otaver=caf-cm9 \
+#    otaupdater.otatime=$(otatime) \
+#    otaupdater.sdcard.recovery=sdcard \
+#    otaupdater.sdcard.os=mnt/sdcard
 
-PRODUCT_PACKAGES += \
-    ota-update-centre
+#PRODUCT_PACKAGES += \
+#    ota-update-centre

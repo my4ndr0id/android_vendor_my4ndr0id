@@ -113,3 +113,4 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT)/addon.d
 include $(BUILD_PREBUILT)
 
+include $(call all-makefiles-under,$(LOCAL_PATH))
