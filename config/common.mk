@@ -115,6 +115,9 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     Apollo \
     CMUpdater \
+    Term \
+    libjackpal-androidterm4 \
+    Superuser \
     GanOptimizer
 
 # Extra tools in CM
