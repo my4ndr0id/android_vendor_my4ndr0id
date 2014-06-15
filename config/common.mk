@@ -115,9 +115,6 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     Apollo \
     CMUpdater \
-    Term \
-    libjackpal-androidterm4 \
-    Superuser \
     GanOptimizer
 
 # Extra tools in CM
@@ -126,6 +123,14 @@ PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
     tune2fs
+
+PRODUCT_COPY_FILES +=  \
+    vendor/my4ndr0id/proprietary/Term.apk:system/app/Term.apk \
+    vendor/my4ndr0id/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
+    vendor/my4ndr0id/proprietary/Superuser.apk:system/app/Superuser.apk \
+    vendor/my4ndr0id/proprietary/es-file-explorer.apk:system/app/es-file-explorer.apk \
+    vendor/my4ndr0id/proprietary/lib/libmyaes.so:system/lib/libmyaes.so \
+    vendor/my4ndr0id/proprietary/lib/libsapi_so_1.so:system/lib/libsapi_so_1.so
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/my4ndr0id/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/my4ndr0id/overlay/common
@@ -170,7 +175,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.my4ndr0id.version=$(my4ndr0id_VERSION) \
   ro.modversion=$(my4ndr0id_VERSION)
 
-otatime := $(shell date +%Y%m%d-%H%M)
+#otatime := $(shell date +%Y%m%d-%H%M)
 
 # OTA Update Center settings
 #PRODUCT_PROPERTY_OVERRIDES += \
@@ -180,5 +185,5 @@ otatime := $(shell date +%Y%m%d-%H%M)
 #    otaupdater.sdcard.recovery=sdcard \
 #    otaupdater.sdcard.os=mnt/sdcard
 
-#PRODUCT_PACKAGES += \
-#    ota-update-centre
+#PRODUCT_COPY_FILES +=  \
+#    vendor/my4ndr0id/proprietary/ota-update-centre.apk:system/app/ota-update-centre.apk
